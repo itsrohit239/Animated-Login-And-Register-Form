@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Registration Form</title>
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to fontawesome Offline -->
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="wrapper">
+        <span class="bg-rotate"></span>
+        <span class="bg2-rotate"></span>
+        <div class="form-box login">
+            <h2 class="title animation" style="--i:0; --j:31">Login</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:1; --j:32">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-box animation" style="--i:2; --j:33">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:3; --j:34">Login</button>
+                <div class="linkText animation" style="--i:5; --j:35">
+                    <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text login">
+            <h2 class="animation" style="--i:0; --j:30">Welcome Back!</h2>
+            <p class="animation" style="--i:1; --j:31">Made By: Rohit Vadher</p>
+        </div>
+
+        <div class="form-box register">
+            <h2 class="title animation" style="--i:16; --j:0">Sign Up</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:17; --j:1">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-box animation" style="--i:18; --j:2">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="input-box animation" style="--i:19; --j:3">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:20; --j:4">Sign Up</button>
+                <div class="linkText animation" style="--i:21; --j:5">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text register">
+            <h2 class="animation" style="--i:17; --j:0">Welcome</h2>
+            <p class="animation" style="--i:18; --j:1">Made By: Rohit Vadher</p>
+        </div>
+    </div>
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const registerLink = document.querySelector('.register-link');
+        const loginLink = document.querySelector('.login-link');
+
+        registerLink.onclick = () => {
+            wrapper.classList.add('active');
+        }
+
+        loginLink.onclick = () => {
+            wrapper.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
