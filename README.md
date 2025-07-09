@@ -1,6 +1,6 @@
 # 🎨 Animated Login & Register Form (Black & White Theme)
 
-A **professional, offline-ready**, and fully responsive **Animated Login and Registration Form** with a minimalistic **black & white** theme and smooth transitions. Built using only **HTML, CSS, and JavaScript**, this project is easy to integrate, customize, and expand.
+A **professional, offline-ready**, and fully responsive **Animated Login and Registration Form** with a minimalistic **black & white** theme and smooth transitions. Built using only **HTML, CSS**, this project is easy to integrate, customize, and expand.
 
 ---
 
